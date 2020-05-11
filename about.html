@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   	<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Gelasio&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>PokéAPI Project</title>
+</head>
+<body>
+<div id="hamburger-menu">
+	<div class="menu-container">
+		<div class="lines-container">
+			<div class="line1"></div>
+			<div class="line2"></div>
+			<div class="line3"></div>
+		</div>
+	</div>
+	<ul id="main-navbar">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="#" id="active-link">About</a></li>
+	</ul>
+</div>
+<div id="main_content">
+	<h1>P<img class="spinning-pokeball" src="images/pokeball-PNG-2d.png" alt="Spinning Pokéball" width="40">kéAPI</h1>
+	<div id="about">
+		<div class="about-description">
+			<h2>About</h2>
+			<p>This website allows you to get data of a Pokémon you search. You can find their Pokédex number, type, abilities, base stats, and moves. This website offers a better user experience for someone with prior knowledge of the Pokémon video games, as the PokéAPI is made based on them. You can start by searching <b>Pikachu</b>!</p>
+			<p>If you want to see the code check my <a href="#">GitHub</a>.</p>
+		</div>
+		<div class="how-to-use">
+			<h3>How to use? </h3>
+			<p>Type a Pokémon name and click the search button or click enter.</p>
+			<p>Make sure you spell the name correctly or you will NOT get any data. Some Pokémon are not available through this API (Application Programming Interface). See below in the Unavailable Pokémon section.</p>
+		</div>
+		<div class="finding-alternate-forms">
+			<h3>Finding Alternate Forms</h3>
+			<p>To find alternate forms you MUST use hyphen ( - ). For example <strong>Charizard-Mega-X</strong>.</p>
+			<p>To find Nidoran&male;Male and Nidoran&female;Female add a hyphen and the first letter of the gender. Type <strong>Nidoran-M</strong> or <strong>Nidoran-F</strong>. They are special Pokémon who share the same name, but different gender.</p>		
+		</div>
+		<div class="pokemon-you-may-miss">
+			<h3>Pokémon You May Miss</h3>
+			<p>This is a list of Pokémon that could be tricky to find because the API uses a hyphen to separate forms, even some regular forms.</p>
+			<ol>
+				<li>Deoxys-Normal</li>
+				<li>Deoxys-Attack</li>
+				<li>Deoxys-Defense</li>
+				<li>Deoxys-Speed</li>
+				<li>Giratina-Origin</li>
+				<li>Giratina-Altered</li>
+				<li>Shaymin-Land</li>
+				<li>Shaymin-Sky</li>
+				<li>Basculin-Red-Striped</li>
+				<li>Basculin-Blue-Striped</li>
+				<li>Keldeo-Ordinary</li>
+				<li>Keldeo-Resolute</li>
+				<li>Meloetta-Aria</li>
+				<li>Meloetta-Pirouette</li>
+				<li>Necrozma-Dusk</li>
+				<li>Necrozma-Dawn</li>
+			</ol>
+		</div>
+		<div class="unavailable-pokemon">
+			<h3>Unavailable Pokémon</h3>
+			<p>Pokémon that are not available in the PokéAPI include:</p>
+			<ol>
+				<li>Meltan</li>
+				<li>Meltmetal</li>
+				<li>All Pokémon from Generation 8 (Galar)</li>
+			</ol>
+		</div>
+		<div class="missing-artwork">
+			<h3>Missing Artwork or/and Sprites</h3>
+			<ol>
+				<li>Deoxys-Attack</li>
+				<li>Deoxys-Defense</li>
+				<li>Deoxys-Speed</li>
+				<li>Giratina-Altered</li>
+				<li>Giratina-Origin</li>
+				<li>Shaymin-Land</li>
+				<li>Shaymin-Sky</li>
+				<li>Basculin-Blue-Striped</li>
+				<li>Keldeo-Ordinary</li>
+				<li>Keldeo-Resolute</li>
+				<li>Meloetta-Aria</li>
+				<li>Meloetta-Pirouette</li>
+				<li>Kyurem-Black</li>
+				<li>Kyurem-White</li>
+				<li>Kyorge-Primal</li>
+				<li>Groudon-Primal</li>
+				<li>Zygarde</li>
+				<li>Zygarde-10</li>
+				<li>Zygarde-Complete</li>
+				<li>All Mega Forms</li>
+				<li>All Alola Forms</li>
+			</ol>
+		</div>
+		<div class="wrong-info">
+			<h3>Inaccurate information</h3>
+			<p>The Pokédex number for a mega Pokémon is inaccurate. Refer to its original form for its true Pokédex Number.</p>
+		</div>
+	</div>
+<footer>@ 2020 Mark Gutiérrez</footer>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>

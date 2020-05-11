@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   	<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Gelasio&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>PokéAPI Project</title>
+</head>
+<body>
+<div id="hamburger-menu">
+	<div class="menu-container">
+		<div class="lines-container">
+			<div class="line1"></div>
+			<div class="line2"></div>
+			<div class="line3"></div>
+		</div>
+	</div>
+	<ul id="main-navbar">
+		<li><a href="#" id="active-link">Home</a></li>
+		<li><a href="about.html">About</a></li>
+	</ul>
+</div>
+<div id="main_content">
+	<h1>P<img class="spinning-pokeball" src="images/pokeball-PNG-2d.png" alt="Spinning Pokéball" width="40">kéAPI</h1>
+	<div class="about-pokeapi">
+		<p class="info">Infomation about Pokémon! Pokédex, Type, Moves, etc...</p>
+	</div>
+	<input type="text" id="pokemon-search" class="enter-search" placeholder="Seach Pokémon" autocomplete="off">
+	<button id="btn">Search</button>
+	<div id="container">
+		<div id="desktop-left-layout">
+			<h2 id="pokemon-name">Pokémon</h2>
+			<img src="images/pokeball-hd-square.png" alt="Pokemon Artwork" id="pokemon-artwork">
+		</div>
+		<div id="desktop-right-layout">
+		<h2>Pokédex Data</h2>
+			<p>National Pokédex#: <span id="pokedex-id"></span></p>
+			<p>Region: <span id="pokemon-region"></span></p>
+			<p>Type: <span id="pokemon-type"></span></p>
+			<p>Abilities: <span id="pokemon-abilities"></span></p>
+			
+			<h2>Base Stats</h2>
+			<div class="base-stat-container">
+				<p>HP: <span id="pokemon-base-hp"></span><span class="stat-hp-gauge"></span></p>
+				<p>Attack: <span id="pokemon-base-attack"></span><span class="stat-attack-gauge"></span></p>
+				<p>Defense: <span id="pokemon-base-defense"></span><span class="stat-defense-gauge"></span></p>
+				<p>Special Attack: <span id="pokemon-base-special-attack"></span><span class="stat-special-attack-gauge"></span></p>
+				<p>Special Defense: <span id="pokemon-base-special-defense"></span><span class="stat-special-defense-gauge"></span></p>
+				<p>Speed: <span id="pokemon-base-speed"></span><span class="stat-speed-gauge"></span></p>
+			</div>
+			<p>Total Base Stats: <span id="total-base-stats"></span><span class="pokemon-base-label"></span></p>
+		</div>
+	</div>
+	<div id="container-sprites-move">	
+		<div id="sprite-images">
+			<h2>Sprites</h2>
+			<img src="images/pokeball-pixel-art.png" alt="Front Sprite" id="pokemon-front-sprite">
+			<img src="images/pokeball-pixel-art.png" alt="Front Sprite Shiny" id="pokemon-front-sprite-shiny">
+			<img src="images/pokeball-pixel-art.png" alt="Back Sprite" id="pokemon-back-sprite">
+			<img src="images/pokeball-pixel-art.png" alt="Back Sprite Shiny" id="pokemon-back-sprite-shiny">
+		</div>
+		<div id="mobile-overflow">
+		<h2>Moves</h2>
+		<table id="moves-table">
+			<tr>
+				<th>Move</th>
+				<th>Method</th>
+				<th>Level</th>
+				<th>Game Version</th>
+			</tr>
+			<tr>
+				<td><ol id="pokemon-moves"></ol></td>
+				<td><ol id="pokemon-learning-method"></ol></td>
+				<td><ol id="pokemon-leveling-moves"></ol></td>
+				<td><ol id="pokemon-game-version"></ol></td>
+			</tr>
+		</table>
+		</div>	
+	</div>
+
+<footer>@ 2020 Mark Gutiérrez</footer>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>
