@@ -1,4 +1,4 @@
-# AJAX Project: [P<img src="images/pokeball-PNG-2d.png" alt="Mark down image" width="30">kéAPI]()
+# AJAX Project: [P<img src="images/pokeball-PNG-2d.png" alt="Mark down image" width="30">kéAPI](https://marklegit.github.io/AJAX-Project-PokeAPI/)
 
 In this project I work with the [PokéAPI](https://pokeapi.co/) to request Pokémon data. The PokéAPI is built around the Pokémon video games. I have prior knowledge of Pokémon and this helped me understand and layout the content better. I added small details that will improve the user experience for Pokémon fans.
 
