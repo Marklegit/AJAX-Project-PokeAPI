@@ -137,12 +137,17 @@ p span{
 	padding: 10px;
 }
 .spinning-pokeball{
-	animation: spin-ball;
-	animation-delay: 0s;
-	animation-iteration-count: 1;
-	animation-duration: 1s;
+	-webkit-animation: spin-ball 1s 0s 1;
+	-moz-animation: spin-ball 1s 0s 1;
+	animation: spin-ball 1s 0s 1;
 	border: 2px solid #2665c9;
 	border-radius: 50%;
+}
+@-webkit-keyframes spin-ball{
+	100% {transform: rotate(360deg);}
+}
+@-moz-keyframes spin-ball{
+	100% {transform: rotate(360deg);}
 }
 @keyframes spin-ball{
 	100% {transform: rotate(360deg);}
