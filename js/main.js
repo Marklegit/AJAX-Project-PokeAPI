@@ -84,7 +84,7 @@ function pokemonData () {
 				pokemonBaseLabel.style.backgroundColor = "";
 				pokemonBaseLabel.style.border = "";
 			}
-			//Varibles used to check if a stat is low, average, high, or extreme
+			//Variables used to check if a stat is low, average, high, or extreme
 			const hpGauge = document.querySelector(".stat-hp-gauge");
 			const attackGauge = document.querySelector(".stat-attack-gauge");
 			const defenseGauge = document.querySelector(".stat-defense-gauge");
@@ -194,7 +194,7 @@ function pokemonData () {
 				speedGauge.style.display = "none";
 				speedGauge.innerHTML = "";
 			}
-			//Tabel row 1: displays data of move names
+			//Table row 1: displays data of move names
 			pokemon['moveList'] = data.moves.map(function(allmoves, idx, pokemon){
 				return `<li><br>${allmoves.move.name}</li>`;
 			}).join(" ");
