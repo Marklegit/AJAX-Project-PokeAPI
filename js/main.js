@@ -195,19 +195,19 @@ function pokemonData () {
 				speedGauge.innerHTML = "";
 			}
 			//Table row 1: displays data of move names
-			pokemon['moveList'] = data.moves.map(function(allmoves, idx, pokemon){
+			pokemon['moveList'] = data.moves.map(function(allmoves){
 				return `<li><br>${allmoves.move.name}</li>`;
 			}).join(" ");
 			//Table row 2: displays data of the method of learning a move
-			pokemon['learnMethod'] = data.moves.map(function(learnMethodMove, idx, pokemon){
+			pokemon['learnMethod'] = data.moves.map(function(learnMethodMove){
 				return `<li>${learnMethodMove.version_group_details.map(learnM => `<br>${learnM.move_learn_method.name}`).join("")}</li>`;
 			}).join("");
 			//Table row 3: displays the level required for a move in each game
-			pokemon['levelingMove'] = data.moves.map(function(levelingmoves, idx, pokemon){
+			pokemon['levelingMove'] = data.moves.map(function(levelingmoves){
 				return `<li>${levelingmoves.version_group_details.map(lvMoves => `<br>${lvMoves.level_learned_at}`).join("")}</li>`;
 			}).join("");
 			//Table row 4: displays the game version that the move belongs to
-			pokemon['gameVersion'] = data.moves.map(function(gameVersionMove, idx, pokemon){
+			pokemon['gameVersion'] = data.moves.map(function(gameVersionMove){
 				return `<li>${gameVersionMove.version_group_details.map(versionGame => `<br>${versionGame.version_group.name}`).join("")}</li>`
 			}).join("");
 			
