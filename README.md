@@ -129,7 +129,7 @@ pokemon['baseHP'] = data.stats[5].base_stats
 Below is how i used `map()` to get data for the moves/game version table section. I am using a template literal to add `<li></li>` and `<br>` to move each data into a new line. The `li` goes inside my `ol` for styling reasons.
 ```
 //Table row 4: displays the game version that the move belongs to
-pokemon['gameVersion'] = data.moves.map(function(gameVersionMove, idx, pokemon){
+pokemon['gameVersion'] = data.moves.map(function(gameVersionMove){
 return `<li>${gameVersionMove.version_group_details.map(versionGame => `<br>${versionGame.version_group.name}`).join("")}</li>`}).join("");
 ```
 
