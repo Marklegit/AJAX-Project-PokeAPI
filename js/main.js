@@ -64,16 +64,16 @@ function pokemonData () {
 			//This adds all the base stats and returns a total base stat
 			let sumOfBaseStats = pokemon.baseHp + pokemon.baseAttack + pokemon.baseDefense + pokemon.baseSpecialAttack + pokemon.baseSpecialDefense + pokemon.baseSpeed;
 			let totalBaseStats = document.getElementById("total-base-stats");
-			totalBaseStats.innerHTML = sumOfBaseStats;
+			totalBaseStats.innerHTML = parseInt(sumOfBaseStats);
 			
 			//Checks for the total base stat and labels them Pseudo-Legendary or Legendary
 			let pokemonBaseLabel = document.querySelector(".pokemon-base-label")
-			if (sumOfBaseStats == "600"){
+			if (sumOfBaseStats === 600){
 				pokemonBaseLabel.innerHTML = "Pseudo-Legendary";
 				pokemonBaseLabel.style.color = "black";
 				pokemonBaseLabel.style.backgroundColor = "rgb(0, 0, 0, 0.1)";
 				pokemonBaseLabel.style.border = "1px solid #aaa";
-			} else if (sumOfBaseStats >= "601"){
+			} else if (sumOfBaseStats >= 601){
 				pokemonBaseLabel.innerHTML = "Legendary";
 				pokemonBaseLabel.style.color = "white";
 				pokemonBaseLabel.style.backgroundColor = "rgb(0, 0, 0, 0.6)";
