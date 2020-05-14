@@ -170,22 +170,22 @@ I label them with an `if else` conditional statement.
 ```
 //Checks for the total base stat and labels them Pseudo-Legendary or Legendary
 let pokemonBaseLabel = document.querySelector(".pokemon-base-label")
-if (sumOfBaseStats == "600"){
-	pokemonBaseLabel.innerHTML = "Pseudo-Legendary";
-	pokemonBaseLabel.style.color = "black";
-	pokemonBaseLabel.style.backgroundColor = "rgb(0, 0, 0, 0.1)";
-	pokemonBaseLabel.style.border = "1px solid #aaa";
-} else if (sumOfBaseStats >= "601"){
-	pokemonBaseLabel.innerHTML = "Legendary";
-	pokemonBaseLabel.style.color = "white";
-	pokemonBaseLabel.style.backgroundColor = "rgb(0, 0, 0, 0.6)";
-	pokemonBaseLabel.style.border = "1px solid #aaa";
-} else {
-	pokemonBaseLabel.innerHTML = "";
-	pokemonBaseLabel.style.color = "";
-	pokemonBaseLabel.style.backgroundColor = "";
-	pokemonBaseLabel.style.border = "";
-}
+	if (sumOfBaseStats === 600){
+		pokemonBaseLabel.innerHTML = "Pseudo-Legendary";
+		pokemonBaseLabel.style.color = "black";
+		pokemonBaseLabel.style.backgroundColor = "rgb(0, 0, 0, 0.1)";
+		pokemonBaseLabel.style.border = "1px solid #aaa";
+	} else if (sumOfBaseStats >= 601){
+		pokemonBaseLabel.innerHTML = "Legendary";
+		pokemonBaseLabel.style.color = "white";
+		pokemonBaseLabel.style.backgroundColor = "rgb(0, 0, 0, 0.6)";
+		pokemonBaseLabel.style.border = "1px solid #aaa";
+	} else {
+		pokemonBaseLabel.innerHTML = "";
+		pokemonBaseLabel.style.color = "";
+		pokemonBaseLabel.style.backgroundColor = "";
+		pokemonBaseLabel.style.border = "";
+	}
 ```
 ### Base stat Label
 Next to a Pokémon you can see a word. I label their base stats Low, Average, High, and Extreme. This helps point out if a stat is weak or strong. Here's the condition I added on each stat as an indicator.
