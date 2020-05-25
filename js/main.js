@@ -50,8 +50,8 @@ function pokemonData () {
 			} else if (pokemon.pokedex >= 722 && pokemon.pokedex <= 808){
 				pokemonRegion.innerHTML = "Alola | Generation VII";
 			}
-			pokemon['type'] = data.types.map(type => type.type.name).join(", ");
-			pokemon['abilities'] = data.abilities.map(ability => ability.ability.name).join(", ");
+			pokemon['type'] = data.types.map(type => type.type.name).reverse().join(", ");
+			pokemon['abilities'] = data.abilities.map(ability => ability.ability.name).reverse().join(", ");
 			
 			//Pokemon base stats
 			pokemon["baseHp"] = data.stats[5].base_stat;
