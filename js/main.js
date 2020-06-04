@@ -50,16 +50,16 @@ function pokemonData () {
 			} else if (pokemon.pokedex >= 722 && pokemon.pokedex <= 808){
 				pokemonRegion.innerHTML = "Alola | Generation VII";
 			}
-			pokemon['type'] = data.types.map(type => type.type.name).reverse().join(", ");
-			pokemon['abilities'] = data.abilities.map(ability => ability.ability.name).reverse().join(", ");
+			pokemon['type'] = data.types.map(type => type.type.name).join(", ");
+			pokemon['abilities'] = data.abilities.map(ability => ability.ability.name).join(", ");
 			
 			//Pokemon base stats
-			pokemon["baseHp"] = data.stats[5].base_stat;
-			pokemon["baseAttack"] = data.stats[4].base_stat;
-			pokemon["baseDefense"] = data.stats[3].base_stat;
-			pokemon["baseSpecialAttack"] = data.stats[2].base_stat;
-			pokemon["baseSpecialDefense"] = data.stats[1].base_stat;
-			pokemon["baseSpeed"] = data.stats[0].base_stat;
+			pokemon["baseHp"] = data.stats[0].base_stat;
+			pokemon["baseAttack"] = data.stats[1].base_stat;
+			pokemon["baseDefense"] = data.stats[2].base_stat;
+			pokemon["baseSpecialAttack"] = data.stats[3].base_stat;
+			pokemon["baseSpecialDefense"] = data.stats[4].base_stat;
+			pokemon["baseSpeed"] = data.stats[5].base_stat;
 			
 			//This adds all the base stats and returns a total base stat
 			let sumOfBaseStats = pokemon.baseHp + pokemon.baseAttack + pokemon.baseDefense + pokemon.baseSpecialAttack + pokemon.baseSpecialDefense + pokemon.baseSpeed;
